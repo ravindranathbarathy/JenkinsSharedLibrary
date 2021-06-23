@@ -1,8 +1,12 @@
 def call(body){
-
-    stage("build") {
-        steps{
-            println("this is a build stage")
+pipeline {
+    agent any
+    stages {
+        stage("build") {
+            steps{
+                println("This is my full pipeline")
+            }
         }
+    }
     }
 }
